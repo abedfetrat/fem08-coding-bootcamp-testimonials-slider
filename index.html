@@ -30,13 +30,16 @@
   <body>
     <main class="container">
       <div class="testimonials-slider">
-        <div class="slide">
-          <img
+        <ul class="slides">
+          <li class="slide active">
+            <img
             class="photo"
             src="./assets/images/image-tanya.jpg"
+            width="540"
+            height="540"
             alt="Tanya Smiling"
           />
-          <figure>
+          <figure class="text-content">
             <blockquote>
               <p class="quote">
                 “ I’ve been interested in coding for a while but never taken the
@@ -49,13 +52,37 @@
               <p class="designation">UX Engineer</p>
             </figcaption>
           </figure>
-        </div>
+          </li>
+          <li class="slide">
+            <img
+            class="photo"
+            src="./assets/images/image-john.jpg"
+            width="540"
+            height="540"
+            alt="John Smiling"
+          />
+          <figure class="text-content">
+            <blockquote>
+              <p class="quote">
+                “ If you want to lay the best foundation possible I’d recommend
+                taking this course. The depth the instructors go into is
+                incredible. I now feel so confident about starting up as a
+                professional developer. ”
+              </p>
+            </blockquote>
+            <figcaption>
+              <p class="name">John Tarkpor</p>
+              <p class="designation">Junior Front-end Developer</p>
+            </figcaption>
+          </figure>
+          </li>
+        </ul>
         <div class="controls-wrapper">
           <div class="controls">
             <button class="previous" type="button"></button>
             <button class="next" type="button"></button>
           </div>
-      </div>
+        </div>
       </div>
     </main>
   </body>
