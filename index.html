@@ -23,64 +23,73 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./style.css" />
 
-    <script src="./main.js" defer></script>
+    <script src="./scripts/main.js" type="module" defer></script>
 
     <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
   </head>
   <body>
     <main class="container">
-      <div class="testimonials-slider">
-        <ul class="slides">
-          <li class="slide active">
+      <div class="testimonial-slider js-testimonial-slider">
+        <ul class="testimonial-slider__slides js-testimonial-slider-slides">
+          <li class="testimonial-slider__slide" data-active>
             <img
-            class="photo"
-            src="./assets/images/image-tanya.jpg"
-            width="540"
-            height="540"
-            alt="Tanya Smiling"
-          />
-          <figure class="text-content">
-            <blockquote>
-              <p class="quote">
-                “ I’ve been interested in coding for a while but never taken the
-                jump, until now. I couldn’t recommend this course enough. I’m
-                now in the job of my dreams and so excited about the future. ”
-              </p>
-            </blockquote>
-            <figcaption>
-              <p class="name">Tanya Sinclair</p>
-              <p class="designation">UX Engineer</p>
-            </figcaption>
-          </figure>
+              class="testimonial-slider__photo js-testimonial-slider-photo"
+              src="./assets/images/image-tanya.jpg"
+              width="540"
+              height="540"
+              alt="Tanya Smiling"
+            />
+            <figure class="testimonial-slider__text-content">
+              <blockquote>
+                <p class="testimonial-slider__quote">
+                  “ I’ve been interested in coding for a while but never taken
+                  the jump, until now. I couldn’t recommend this course enough.
+                  I’m now in the job of my dreams and so excited about the
+                  future. ”
+                </p>
+              </blockquote>
+              <figcaption>
+                <p class="testimonial-slider__name">Tanya Sinclair</p>
+                <p class="testimonial-slider__designation">UX Engineer</p>
+              </figcaption>
+            </figure>
           </li>
-          <li class="slide">
+          <li class="testimonial-slider__slide">
             <img
-            class="photo"
-            src="./assets/images/image-john.jpg"
-            width="540"
-            height="540"
-            alt="John Smiling"
-          />
-          <figure class="text-content">
-            <blockquote>
-              <p class="quote">
-                “ If you want to lay the best foundation possible I’d recommend
-                taking this course. The depth the instructors go into is
-                incredible. I now feel so confident about starting up as a
-                professional developer. ”
-              </p>
-            </blockquote>
-            <figcaption>
-              <p class="name">John Tarkpor</p>
-              <p class="designation">Junior Front-end Developer</p>
-            </figcaption>
-          </figure>
+              class="testimonial-slider__photo js-testimonial-slider-photo"
+              src="./assets/images/image-john.jpg"
+              width="540"
+              height="540"
+              alt="John Smiling"
+            />
+            <figure class="testimonial-slider__text-content">
+              <blockquote>
+                <p class="testimonial-slider__quote">
+                  “ If you want to lay the best foundation possible I’d
+                  recommend taking this course. The depth the instructors go
+                  into is incredible. I now feel so confident about starting up
+                  as a professional developer. ”
+                </p>
+              </blockquote>
+              <figcaption>
+                <p class="testimonial-slider__name">John Tarkpor</p>
+                <p class="testimonial-slider__designation">
+                  Junior Front-end Developer
+                </p>
+              </figcaption>
+            </figure>
           </li>
         </ul>
-        <div class="controls-wrapper">
-          <div class="controls">
-            <button class="previous" type="button"></button>
-            <button class="next" type="button"></button>
+        <div class="testiomonial-slider__controls-wrapper">
+          <div class="testimonial-slider__controls">
+            <button
+              class="testimonial-slider__btn-previous js-testimonial-slider-btn-previous"
+              type="button"
+            ></button>
+            <button
+              class="testimonial-slider__btn-next js-testimonial-slider-btn-next"
+              type="button"
+            ></button>
           </div>
         </div>
       </div>
