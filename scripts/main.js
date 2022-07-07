@@ -1,14 +1,16 @@
 import { TestimonialSlider } from './testimonial-slider.js';
 
-const root = document.documentElement;
-
 document.querySelectorAll('.js-testimonial-slider').forEach((sliderElement) => {
     new TestimonialSlider(sliderElement);
-})
+});
+
+updatePhotoHeight();
+
+window.addEventListener('resize', updatePhotoHeight);
 
 /* Updates photo height custom property with value of the photo elements height. */
-window.addEventListener('resize', () => {
+function updatePhotoHeight() {
     const photo = document.querySelector('.js-testimonial-slider-photo');
     const height = photo.getBoundingClientRect().height;
-    root.style.setProperty('--photo-height', `${height / 16}rem`);
-})
+    document.documentElement.style.setProperty('--photo-height', `${height / 16}rem`);
+}
