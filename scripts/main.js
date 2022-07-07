@@ -10,5 +10,5 @@ document.querySelectorAll('.js-testimonial-slider').forEach((sliderElement) => {
 window.addEventListener('resize', () => {
     const photo = document.querySelector('.js-testimonial-slider-photo');
     const height = photo.getBoundingClientRect().height;
-    root.style.setProperty('--photo-height', height + 'px');
+    root.style.setProperty('--photo-height', `${height / 16}rem`);
 })
