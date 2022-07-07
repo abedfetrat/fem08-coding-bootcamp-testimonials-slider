@@ -3,7 +3,6 @@ import { TestimonialSlider } from './testimonial-slider.js';
 const root = document.documentElement;
 
 document.querySelectorAll('.js-testimonial-slider').forEach((sliderElement) => {
-    console.log('test');
     new TestimonialSlider(sliderElement);
 })
 

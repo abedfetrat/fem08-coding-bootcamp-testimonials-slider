@@ -29,16 +29,16 @@
   </head>
   <body>
     <main class="container">
-      <div class="testimonial-slider js-testimonial-slider">
-        <ul class="testimonial-slider__slides js-testimonial-slider-slides">
-          <li class="testimonial-slider__slide" data-active>
-            <img
-              class="testimonial-slider__photo js-testimonial-slider-photo"
-              src="./assets/images/image-tanya.jpg"
-              width="540"
-              height="540"
-              alt="Tanya Smiling"
-            />
+      <section
+        class="testimonial-slider js-testimonial-slider"
+        aria-label="testimonial slider"
+      >
+        <p class="sr-only">
+          This is a slider of testimonials. Use the previous and next buttons to
+          navigate between the slides.
+        </p>
+        <div class="testimonial-slider__slides js-testimonial-slider-slides">
+          <div class="testimonial-slider__slide" role="group" data-active>
             <figure class="testimonial-slider__text-content">
               <blockquote>
                 <p class="testimonial-slider__quote">
@@ -48,20 +48,20 @@
                   future. ”
                 </p>
               </blockquote>
-              <figcaption>
+              <figcaption class="testimonial-slider__caption">
                 <p class="testimonial-slider__name">Tanya Sinclair</p>
                 <p class="testimonial-slider__designation">UX Engineer</p>
               </figcaption>
             </figure>
-          </li>
-          <li class="testimonial-slider__slide">
             <img
               class="testimonial-slider__photo js-testimonial-slider-photo"
-              src="./assets/images/image-john.jpg"
+              src="./assets/images/image-tanya.jpg"
               width="540"
               height="540"
-              alt="John Smiling"
+              alt="Tanya Smiling"
             />
+          </div>
+          <div class="testimonial-slider__slide" role="group">
             <figure class="testimonial-slider__text-content">
               <blockquote>
                 <p class="testimonial-slider__quote">
@@ -71,28 +71,39 @@
                   as a professional developer. ”
                 </p>
               </blockquote>
-              <figcaption>
+              <figcaption class="testimonial-slider__caption">
                 <p class="testimonial-slider__name">John Tarkpor</p>
                 <p class="testimonial-slider__designation">
                   Junior Front-end Developer
                 </p>
               </figcaption>
             </figure>
-          </li>
-        </ul>
+            <img
+              class="testimonial-slider__photo js-testimonial-slider-photo"
+              src="./assets/images/image-john.jpg"
+              width="540"
+              height="540"
+              alt="John Smiling"
+            />
+          </div>
+        </div>
         <div class="testiomonial-slider__controls-wrapper">
           <div class="testimonial-slider__controls">
             <button
               class="testimonial-slider__btn-previous js-testimonial-slider-btn-previous"
               type="button"
-            ></button>
+            >
+              <span class="sr-only">Previous Slide</span>
+            </button>
             <button
               class="testimonial-slider__btn-next js-testimonial-slider-btn-next"
               type="button"
-            ></button>
+            >
+              <span class="sr-only">Next Slide</span>
+            </button>
           </div>
         </div>
-      </div>
+      </section>
     </main>
   </body>
 </html>
